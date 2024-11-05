@@ -16,7 +16,7 @@ if [ ${USER_UID} -ne 0 ]; then
     exit
     fi
 
-    if [ ! -e components/${COMPONENT}.sh ]; then
+    if [ ! -e components/"${COMPONENT}".sh ]; then
       echo -e "\e[1;31mComponent script doesnot exists\e[0m"
       exit
       fi

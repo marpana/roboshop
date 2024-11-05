@@ -9,6 +9,7 @@ if [ ${USER_UID} -ne 0 ]; then
   fi
 
   COMPONENT=$1
+  echo COMPONENT
 
   if [ -z "$COMPONENT" ]; then
     echo -e "\e[1;31mComponent Argument, check Input is missing\e[0m"
